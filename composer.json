@@ -1,0 +1,36 @@
+{
+  "name": "skachinsky/locale-translator",
+  "description": "Library for Laravel. For tables from the database, the required field is returned based on the current locale.",
+  "keywords": [
+    "laravel",
+    "eloquent",
+    "locale",
+    "translate"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vasily Skachinsky",
+      "email": "skachinsky@yandex.ru"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "illuminate/support": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Skachinsky\\LocaleTranslator\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Skachinsky\\LocaleTranslator\\LocaleTranslatorServiceProvider"
+      ]
+    }
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}
